@@ -9,7 +9,21 @@ img {
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  
+  }
+  // right layout
+  .right-layout {
+    float: right;
+  }
+
+  .row .col-md-6 {
+    width: 75%;
+    margin-left: 0px;
+  }
+
+  .row .col-md-6_right {
+    width: 20%;
+
+    margin-right: 0px;
   }
 
   .login_name {
@@ -50,4 +64,8 @@ main {
 section {
   @extend .row;
   margin-top: 20px;
+  }
+
+  .ads {
+    padding: 15px;
   }

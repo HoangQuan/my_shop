@@ -13,8 +13,19 @@
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+      <div class="container">
+        <%= render 'layouts/messages' %>
+        <div class="row clearfix">
+          <div class="col-md-6 column">
+            <%= yield %>
+          </div>
+          <div class="col-md-6_right column">
+            <%= render 'layouts/ads' %>
+            <%= render 'layouts/right_layout' %>
+          </div>
+        </div>
+      </div>
+       
     </main>
   </body>
 </html>
