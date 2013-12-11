@@ -25,6 +25,13 @@ gem 'bootstrap-sass'
 group :development do
   gem 'rails_layout'
 end
+# to deploy to heruku
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+
+ruby '1.9.3'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
