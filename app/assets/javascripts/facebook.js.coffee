@@ -9,6 +9,7 @@ jQuery ->
 
 window.fbAsyncInit = ->
   FB.init(appId: '767124323302603', cookie: true)
+  channelUrl : 'http://zazzlebaytobreakers.com/lib/channel.php'
 
   $('#sign_in').click (e) ->
     e.preventDefault()
