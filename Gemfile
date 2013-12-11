@@ -31,8 +31,6 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-ruby '1.9.3'
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem "omniauth", "~> 1.1.1"
