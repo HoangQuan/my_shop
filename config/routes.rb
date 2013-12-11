@@ -1,4 +1,9 @@
 MyShop::Application.routes.draw do
+  root :to => 'home#index'
+  match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+  match "/auth/failure" => redirect("/"), via: [:get, :post]
+  match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
+  match '/signin' => 'sessions#new', :as => :signin, via: [:get, :post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
